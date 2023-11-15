@@ -1,0 +1,223 @@
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --slate-blue: hsl(252, 100%, 67%);
+    --royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.main {
+    background-color: var(--white);
+    box-shadow: 0px 0px 32px 0px rgba(17,37,212,0.4);
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(17,37,212,0.4);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(17,37,212,0.4);
+}
+
+.container {
+    height: auto;
+    width: 500px;
+    padding-bottom: 60px;
+}
+
+
+
+
+/* RESULT */
+#result {
+    background-image: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    color: var(--pale-blue);
+}
+
+#result-number {
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    opacity: .6;
+}
+
+#top {
+    font-size: 56px;
+}
+
+#bottom {
+    font-size: 16px; 
+    font-weight: 500;
+    color: var(--pale-blue);
+}
+
+#result-p {
+    color: var(--light-blue);
+    opacity: .6;
+    line-height: 1.5;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 500;
+}
+/* SUMMARY */
+#summary {
+    margin: 20px 40px;
+    width: 350px;
+
+}
+
+.summary-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.summary-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.summary-p {
+    margin-left: 20px;
+}
+
+.red {
+    color: var(--light-red);
+}
+
+.orange {
+    color: var(--orange-yellow);
+}
+
+.green {
+    color: var(--green-teal);
+}
+
+.blue {
+    color: var(--cobalt-blue);
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 05%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 05%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 05%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 05%);
+}
+
+.right, #bottom {
+    opacity: .4;
+}
+
+button {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 40px;
+    background-color: var(--gray-blue);
+    color: var(--white);
+    border: none;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--cobalt-blue);
+    cursor: pointer;
+}
+
+
+
+/* Desktop  ****************************************************************/
+@media screen and (min-width: 601px){
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin: 60px auto;
+        height: 400px;
+        width: 600px;
+        border-radius: 40px;
+    }
+
+    #result {
+        border-radius: 40px;
+    }
+}
+
+/* MOBILE  ****************************************************************/
+@media screen and (max-width: 600px) {
+    .main {
+        margin: 60px auto;
+        height: 760px;
+        width: 350px;
+    }
+    
+    .container {
+        height: auto;
+        width: 350px;
+        padding-bottom: 60px;
+    }
+    
+    /* RESULT */
+    #result {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    
+    /* SUMMARY */
+    .summary-card {
+        width: 80%;
+    }
+ 
+    button {
+        width: 80%;
+    }
+    
+
+}

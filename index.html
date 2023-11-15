@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+<div class="main">
+<div id="result" class="container">
+  <div class="title">Your Result</div>
+  <div id="result-number">
+    <span id="top">76</span>
+    <span id="bottom">of 100</span>
+  </div>
+  <h2>Great</h2>
+  <p id="result-p"> You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+<div id="summary" class="container">
+  <h3>Summary</h3>
+
+  <div id="reaction" class="summary-card">
+    <div class="summary-left">
+      <img src="assets/images/icon-reaction.svg" />
+      <p class="summary-p red">Reaction</p>     
+    </div>
+    <div class="percentage">
+      <span class="left">80</span>
+      <span class="right">/ 100</span>
+    </div>
+  </div>
+
+  <div id="memory" class="summary-card">
+    <div class="summary-left">
+      <img src="assets/images/icon-memory.svg" />
+      <p class="summary-p orange">Memory</p>
+    </div>
+    <div class="percentage">
+      <span class="left">92</span>
+      <span class="right">/ 100</span>
+    </div>
+  </div>
+
+  <div id="verbal" class="summary-card">
+    <div class="summary-left">
+      <img src="assets/images/icon-verbal.svg" />
+      <p class="summary-p green">Verbal</p>
+    </div>
+    <div class="percentage">
+      <span class="left">61</span>
+      <span class="right">/ 100</span>
+    </div>
+  </div>
+
+  <div id="visual" class="summary-card">
+    <div class="summary-left">
+      <img src="assets/images/icon-visual.svg" />
+      <p class="summary-p blue">Visual</p>
+    </div>
+    <div class="percentage">
+      <span class="left">72</span>
+      <span class="right">/ 100</span>
+    </div>
+  </div>
+  <button>Continue</button>
+</div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">D. Jaime Blockton</a>.
+  </div>
+</body>
+</html>
